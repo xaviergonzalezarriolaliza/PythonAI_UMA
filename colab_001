@@ -1,0 +1,69 @@
+grupo de Diego, Javier y Josep
+
+###Ejercicio pg 404 autor Diego
+
+letter = input("Enter the alphabet: ")
+if letter in ["a", "e", "i", "o", "u"]:
+    print(f"{letter} is a vowel.")
+else:
+    print(f"{letter} is a consonant.")
+    
+#Ejercicio 405 autor D
+
+integers = input("Write two integers: ")
+a, b = integers.split(" ")
+if int(a) % int(b) == 0:
+    print(f"{a} is a multiple of {b}.")
+else:
+    print(f"{a} is not a multiple of {b}.")
+    
+    
+    
+    
+### Ejercicio 421
+
+print("1) Addition\t2) Subtraction 3)\tMultiplication\t4) Division")
+operator = int(input("Enter the desired number of operation: "))
+if 1 > operator > 4:
+    print("Incorrect operator.")
+else:
+    print("Enter two numbers for operation.")
+    a = int(input())
+    b = int(input())
+    if a < 0 or b < 0:
+        print("Numbers must be positive integers")
+    else:
+        if operator == 1:
+            print(f"{a} + {b} = {a + b}")
+        elif operator == 2:
+            print(f"{a} - {b} = {a - b}")
+        elif operator == 3:
+            print(f"{a} * {b} = {a * b}")
+        elif operator == 4:
+            print(f"{a} / {b} = {a / b}")
+            
+            
+            
+  #### Ejercicio 422 autor Diego
+  
+  coord = input("Enter x,y coordinates: ")
+x_str, y_str =  coord.split(" ")
+x = int(x_str)
+y = int(y_str)
+if x == 0 and y == 0:
+    print("In the origin.")
+elif x == 0:
+    print("In the Y axis.")
+elif y == 0:
+    print("In the X axis.")
+elif x > 0 and y > 0:
+    print("In the first quadrant.")
+elif x < 0 and y > 0:
+    print("In the second quadrant.")
+elif x < 0 and y < 0:
+    print("In the third quadrant.")
+elif x > 0 and y < 0:
+    print("In the fourth quadrant.")
+
+    
+    
